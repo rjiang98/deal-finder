@@ -28,7 +28,18 @@ const DealIntentHandler = {
 
     let repsonse = getJSON();
 
-    for (let deal in )
+    let dealsArray = response.deals;
+
+    let qualifiers = ['Wow, what a deal!', 'Amazing right?', 'Incredible options!'
+                      'I can not believe that one!', 'Awesome!'];
+
+    for (let i = 0; i < dealsArray.length; i++) {
+      let deal = dealsArray[i];
+      let number = i + 1;
+      let qualifier = qualifiers[Math.floor(Math.random()*qualifiers.length)];
+      speechText += 'Deal number ' + number + ' is ' + deal.announcementTitle + '. ';
+      speechText += qualifier;
+    }
 
     return handlerInput.responseBuilder
             .speak(speechText)
