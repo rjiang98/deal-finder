@@ -1,4 +1,18 @@
 import { getJSON } from 'mock_json_response';
+const Alexa = require('ask-sdk-core');
+
+const skillBuilder = ALexa.SkillBuilders.custom();
+
+exports.handler = skillBuilder
+  .addRequestHandlers(
+    LaunchRequestHandler,
+    DealIntentHandler,
+    HelpIntentHandler,
+    CancelAndStopIntentHandler,
+    SessionEndedRequestHandler
+  )
+  .addErrorHandlers(ErrorHandler)
+  .lambda();
 
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
