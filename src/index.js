@@ -1,7 +1,7 @@
 import { getJSON } from 'mock_json_response';
 const Alexa = require('ask-sdk-core');
 
-const skillBuilder = ALexa.SkillBuilders.custom();
+const skillBuilder = Alexa.SkillBuilders.custom();
 
 exports.handler = skillBuilder
   .addRequestHandlers(
