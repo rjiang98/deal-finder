@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/rjiang98/2018-global-hackathon/issues"
   },
-  "homepage": "https://github.com/rjiang98/2018-global-hackathon#readme"
+  "homepage": "https://github.com/rjiang98/2018-global-hackathon#readme",
+  "dependencies": {
+    "ask-sdk": "^2.0.7"
+  }
 }
