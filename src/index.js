@@ -1,4 +1,4 @@
-import { getJSON } from 'mock_json_response';
+import { getJSON } from "mock_json_response";
 const Alexa = require('ask-sdk-core');
 
 const skillBuilder = Alexa.SkillBuilders.custom();
@@ -44,7 +44,7 @@ const DealIntentHandler = {
 
     let dealsArray = response.deals;
 
-    let qualifiers = ['Wow, what a deal!', 'Amazing right?', 'Incredible options!'
+    let qualifiers = ['Wow, what a deal!', 'Amazing right?', 'Incredible options!',
                       'I can not believe that one!', 'Awesome!'];
 
     for (let i = 0; i < dealsArray.length; i++) {
@@ -85,7 +85,7 @@ const CancelAndStopIntentHandler = {
       && (handlerInput.requestEnvelope.request.intent.name === 'AMAZON.CancelIntent'
           || handlerInput.requestEnvelope.request.intent.name === 'AMAZON.StopIntent');
   },
-  handle(handleInput) {
+  handle(handlerInput) {
     const speechText = 'Thank you for using Deal Finder powered by Groupon!';
 
     return handlerInput.responseBuilder
