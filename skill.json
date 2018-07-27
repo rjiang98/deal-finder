@@ -1,0 +1,46 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Deal Finder helps the user to find daily deals from Groupon.",
+          "examplePhrases": [
+            "Alexa, check the deals on Deal Finder",
+            "Alexa, open Deal Finder",
+            "Alexa, find me deals in Seattle with Deal Finder"
+          ],
+          "keywords": [
+            "Shopping",
+            "Deals",
+            "Coupons",
+            "Savings"
+          ],
+          "name": "Deal Finder",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/16df/b27c726c052f4d89b90e386d8cb559bf/APP_ICON?versionId=UiXQsZe5BtvpjtuLMiekuLLD1VJN1Av2&AWSAccessKeyId=AKIAIEYXX6DHY7O4XWMA&Expires=1532731841&Signature=CIq4gd%2Bh5EzTUM1%2FBiNqETjIZJ8%3D",
+          "description": "With Deal Finder, the user can easily find deals in a variety of areas, wherever they are. Whether the user wants to find deals on the west or east coast, in booking hotels, food, or travel, Deal Finder will interact with Groupon and quickly find deals for the user.",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/a111/cffadb423110403e827b1d18c0907a6e/APP_ICON_LARGE?versionId=rtIYS17NXpg_mwIvQ9URgqLJ0qE8JIS_&AWSAccessKeyId=AKIAIEYXX6DHY7O4XWMA&Expires=1532731841&Signature=3zoH3yReT8lG7gKD3HwFIbs0RTM%3D"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "category": "SHOPPING",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "./lambda/us-east-1_deal_finder_search"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

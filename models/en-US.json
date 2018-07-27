@@ -1,0 +1,147 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "deal finder",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "DealIntent",
+          "slots": [
+            {
+              "name": "Location",
+              "type": "AMAZON.US_CITY"
+            },
+            {
+              "name": "Category",
+              "type": "Category"
+            }
+          ],
+          "samples": [
+            "find a deal"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "retail",
+                "synonyms": [
+                  "personalized item"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "personal services",
+                "synonyms": [
+                  "charity and grassroots",
+                  "electronics repair",
+                  "local service",
+                  "event rental service",
+                  "pet",
+                  "consultant",
+                  "photography",
+                  "class"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "home improvement",
+                "synonyms": [
+                  "cooling",
+                  "heating",
+                  "lighting",
+                  "outdoor decor",
+                  "garden equipment",
+                  "garden tool",
+                  "outdoor equipment",
+                  "hand tool ",
+                  "power tool",
+                  "outdoor accessory",
+                  "grill",
+                  "home",
+                  "decor"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "health and fitness",
+                "synonyms": [
+                  "vision",
+                  "medical",
+                  "dental",
+                  "weight loss",
+                  "natural medicine",
+                  "sport",
+                  "gym",
+                  "fitness",
+                  "health"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "beauty and spas",
+                "synonyms": [
+                  "styling",
+                  "tanning",
+                  "makeup",
+                  "cosmetic procedure",
+                  "cosmetic",
+                  "massage",
+                  "salon",
+                  "spa",
+                  "beauty"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "automotive",
+                "synonyms": [
+                  "car part",
+                  "car electronic",
+                  "car replacement part",
+                  "car accessory",
+                  "motorsport",
+                  "car organization",
+                  "car care",
+                  "car"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "food and drinks",
+                "synonyms": [
+                  "drink",
+                  "food"
+                ]
+              }
+            }
+          ],
+          "name": "Category"
+        }
+      ]
+    }
+  }
+}
