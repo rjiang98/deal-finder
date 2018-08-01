@@ -1,5 +1,9 @@
 # 2018-global-hackathon
-Amazon 2018 Global Intern Hackathon
+<<<<<<< HEAD
+# Amazon 2018 Global Intern Hackathon
+=======
+Amazon Global Intern Hackathon
+>>>>>>> 9ca4079... Edited ReadMe
 
 ---Project Deal Finder---
 
